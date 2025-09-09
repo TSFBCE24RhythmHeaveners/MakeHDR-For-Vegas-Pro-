@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
-project(make_hdr LANGUAGES CXX)
+project(make_hdr_vegas LANGUAGES CXX)
 
 set(CMAKE_BUILD_TYPE Release)
-set(INSTALL_BIN_PATH ${CMAKE_BINARY_DIR}/make_hdr.ofx.bundle/Contents)
+set(INSTALL_BIN_PATH ${CMAKE_BINARY_DIR}/make_hdr_vegas.ofx.bundle/Contents)
 set(INSTALL_RES_PATH ${INSTALL_BIN_PATH}/Resources)
 
 if (WIN32)
@@ -41,7 +41,7 @@ set_target_properties(make_hdr
 	LINKER_LANGUAGE CXX
 	PREFIX ""
 	SUFFIX ".ofx"
-	OUTPUT_NAME "make_hdr")
+	OUTPUT_NAME "make_hdr_vegas")
 
 target_compile_definitions(make_hdr PRIVATE)
 
